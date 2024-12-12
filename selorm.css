@@ -1,0 +1,133 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Main Container */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Clock Container */
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 8px solid #333;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+/* Center Point */
+.clock .point {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #333;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+/* Clock Hands */
+.clock .arm {
+    position: absolute;
+    background-color: #333;
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hour Hand */
+.clock .hourHand {
+    width: 6px;
+    height: 60px;
+    top: 40px;
+    left: 97px;
+    background-color: #000;
+}
+
+/* Minute Hand */
+.clock .minHand {
+    width: 4px;
+    height: 80px;
+    top: 20px;
+    left: 98px;
+    background-color: #555;
+}
+
+/* Second Hand */
+.clock .secHand {
+    width: 2px;
+    height: 90px;
+    top: 10px;
+    left: 99px;
+    background-color: red;
+}
+
+/* Clock Numbers */
+.clock .time {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Positioning the Numbers */
+.clock .top {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.clock .down {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.clock .left {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.clock .right {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Digital Display Styling */
+.display {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 200px;
+}
+
+.display .time-box {
+    padding: 6px;
+    background-color: #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.display .time-box p{
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+}
+
